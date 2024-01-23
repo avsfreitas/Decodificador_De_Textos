@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Decodificador de Textos</title>
+</head>
+<body>
+    <header>
+        <img src="assets/images/Logo.png" alt="Logo Alura">
+    </header>
+    <main>
+        <section id="entradaDeTexto">
+            <div id="caixaDeTexto">
+                <textarea name="entradaDoTexto" id="textoCriptografar" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div>
+                <p><img src="assets/images/bi_exclamation-circle-fill.png" alt="">Apenas letras minúsculas e sem acento</p>
+                <button onclick="acaoCriptografar()" class="botoes" id="botaoCriptografar">Criptografar</button>
+                <button onclick="acaoDescriptografar()" class="botoes">Descriptografar</button>
+            </div>
+        </section>
+        <section id="saidaDeTexto">
+            <textarea name="saidaDoTexto" id="textoCriptografado" cols="30" rows="10" class="aparecerAposTexto"></textarea>
+            <img src="assets/images/bonecocomlupa.png" alt="Menino com uma lupa" class="desaparecerAposTexto">
+            <h2 class="desaparecerAposTexto">Nenhuma mensagem encontrada</h2>
+            <p class="desaparecerAposTexto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button onclick="acaoCopiarTexto()" id="botaoCopiar" class="aparecerAposTexto">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <span>Amanda Freitas</span> para <span>Alura</span></p>
+    </footer>
+
+    <script src="assets/app.js" defer></script>
+</body>
+</html>

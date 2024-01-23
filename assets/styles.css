@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin-top: 40px;
+}
+
+body, main {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 14px; 
+    background-color: #F3F5FC;
+}
+
+#entradaDeTexto {
+    margin-top: 150px;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#caixaDeTexto > textarea {
+    border: 0px;
+    background: #F3F5FC;
+    width: 655px;
+    height: 500px;
+    resize: none;
+    color: #0A3871;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#caixaDeTexto textarea:focus, #saidaDeTexto textarea:focus {
+    outline: 0;
+} 
+
+#saidaDeTexto {
+    width: 400px;
+    height: 760px;
+    margin: 40px 0px;
+    display: flex;
+    flex-flow: column wrap;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+#saidaDeTexto > h2, p {
+    line-height: 28.8px;
+    margin: 10px 13px;
+}
+
+.desaparecerAposTexto {
+    display: block;
+}
+
+.aparecerAposTexto {
+    display: none;
+}
+
+#saidaDeTexto > textarea {
+    border: 0px;
+    background: #FFFFFF;
+    width: 360px;
+    height: 580px;
+    resize: none;
+    color: #0A3871;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 20px;
+
+}
+
+#saidaDeTexto > img {
+    margin-top: 200px;
+}
+.botoes {
+    width: 320px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    background-color: #D8DFE8;
+}
+
+#botaoCriptografar {
+    background-color: #0A3871;
+    color: #D8DFE8;
+    border: 1px solid #D8DFE8;
+}
+
+#botaoCopiar {
+    align-self: center;
+    width: 320px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    background-color: #FFFFFF;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    color: #D8DFE8;
+    background-color: #0A3871;
+}
+
+footer  span {
+    font-weight: bolder;
+    color: rgb(247, 255, 255);
+}
